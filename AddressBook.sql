@@ -65,3 +65,9 @@ select * from AddressBook where City = 'Sasaram' order by FirstName;
 alter table AddressBook add AddressBookName varchar(50), type varchar(30);
 
 update AddresssBook set AddressBookName = 'A', Type = 'Friends' where FirstName = 'Vivek',
+
+update AddressBook set AddressBookName = 'B', Type = 'Friends' where FirstName = 'Abhishek';
+
+update AddressBook set AddressBookName = 'A', Type = 'Proffesion' where FirstName = 'Pooja';
+
+update AddressBook set AddressBookName = 'B', Type = 'Proffesion' where FirstName = 'Vanshika';
