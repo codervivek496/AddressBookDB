@@ -29,3 +29,7 @@ insert into AddressBook values
 --UC4 Edit Contact in AddressBook table
 
 update AddressBook set Phone = 9431845177 where FirstName = 'Pooja';
+
+--UC5 Delete contact using First name
+
+delete from AddressBook where FirstName = 'Abhishek';
