@@ -39,3 +39,14 @@ delete from AddressBook where FirstName = 'Abhishek';
 select * from AddressBook where City = 'Lucknow';
 
 Select * from AddressBook where State = 'Bihar';
+
+--UC7 size of AddresssBook table by City and State
+
+insert into AddressBook values
+('Vanshika', 'Singh', 'Ansal', 'Kuruksetra', 'Hariyana', 183232, 7004437828, 'vanshika@gmail.com')
+
+--Size by city
+select City, count(City) as  'Total Contacts' from AddressBook group by City;
+
+--Size by State
+select State, count(State) as 'total Contacts' from AddressBook
