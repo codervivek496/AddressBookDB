@@ -50,3 +50,12 @@ select City, count(City) as  'Total Contacts' from AddressBook group by City;
 
 --Size by State
 select State, count(State) as 'total Contacts' from AddressBook
+
+--UC8 retrieve entries sorted alphabetically by name for a given city
+
+insert into AddressBook values
+('Sonu', 'Sinha', 'New Area', 'Sasaram', 'Bihar', 821115, 9921117823, 'sonu@gmail.com');
+
+select * from AddressBook;
+
+select * from AddressBook where City = 'Sasaram' order by FirstName;
