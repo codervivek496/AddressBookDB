@@ -59,3 +59,9 @@ insert into AddressBook values
 select * from AddressBook;
 
 select * from AddressBook where City = 'Sasaram' order by FirstName;
+
+--UC9 Identify each address book with name and type
+
+alter table AddressBook add AddressBookName varchar(50), type varchar(30);
+
+update AddresssBook set AddressBookName = 'A', Type = 'Friends' where FirstName = 'Vivek',
