@@ -18,3 +18,10 @@ Email varchar(50) not null
 );
 
 select * from AddressBook
+
+--UC3 Instert Contacts into AddressBook table
+
+insert into AddressBook values
+('Vivek', 'Kumar', 'gaulakshni', 'Sasaram', 'Bihar', 821115, 7004437837, 'viveksinghssm496@gmail.com'),
+('Abhishek', 'Kumar', 'Pagwada', 'Jalandhar', 'Punjab', 399392, 9931532761, 'abhishek@gmmail.com'),
+('Pooja', 'Kumari', 'gomti nagar', 'Lucknnow', 'Utter Pradesh', 923492, 9631007829, 'poojakumari@gmail.com');
