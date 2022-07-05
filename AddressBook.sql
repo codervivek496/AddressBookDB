@@ -70,4 +70,17 @@ update AddressBook set AddressBookName = 'B', Type = 'Friends' where FirstName =
 
 update AddressBook set AddressBookName = 'A', Type = 'Proffesion' where FirstName = 'Pooja';
 
+<<<<<<< HEAD
 update AddressBook set AddressBookName = 'B', Type = 'Proffesion' where FirstName = 'Vanshika';
+=======
+update AddressBook set AddressBookName = 'B', Type = 'Proffesion' where FirstName = 'Vanshika';
+
+-- UC10 Get number of contact ( count by type )
+
+select Type , count(Type) as 'Total' from AddressBook group by Type;
+
+-- UC11 Add same contact to different types
+
+insert into AddressBook values
+('Mohak', 'Mangal', 'Hennur', 'Bengaluru', 'Karnataka', 560043, 9802587361, 'mohak.mangal@gmail.com', 'B', 'Proffession');
+
