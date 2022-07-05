@@ -33,3 +33,9 @@ update AddressBook set Phone = 9431845177 where FirstName = 'Pooja';
 --UC5 Delete contact using First name
 
 delete from AddressBook where FirstName = 'Abhishek';
+
+--UC6 Retrieve person belonging to City or State from AddressBook
+
+select * from AddressBook where City = 'Lucknow';
+
+Select * from AddressBook where State = 'Bihar';
